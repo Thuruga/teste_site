@@ -1,0 +1,26 @@
+{
+    "Matemática": [
+        {
+            "question": "Qual é o resultado de 2 + 2?",
+            "options": ["3", "4", "5", "6"],
+            "answer": 1
+        },
+        {
+            "question": "Quanto é 5 x 5?",
+            "options": ["20", "25", "30", "35"],
+            "answer": 1
+        }
+    ],
+    "História": [
+        {
+            "question": "Em que ano terminou a Segunda Guerra Mundial?",
+            "options": ["1942", "1945", "1950", "1939"],
+            "answer": 1
+        },
+        {
+            "question": "Quem foi o primeiro presidente do Brasil?",
+            "options": ["Getúlio Vargas", "Juscelino Kubitschek", "Deodoro da Fonseca", "Dom Pedro II"],
+            "answer": 2
+        }
+    ]
+}

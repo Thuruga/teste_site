@@ -1,0 +1,16 @@
+{
+    "admin": {
+        "password": "admin123",
+        "role": "admin"
+    },
+    "joao": {
+        "password": "joao123",
+        "role": "user",
+        "area": "Matemática"
+    },
+    "maria": {
+        "password": "maria123",
+        "role": "user",
+        "area": "História"
+    }
+}

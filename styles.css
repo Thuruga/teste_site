@@ -1,0 +1,207 @@
+/* Estilos Gerais */
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --success: #27ae60;
+    --error: #e74c3c;
+    --background: #f8f9fa;
+    --text: #2c3e50;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+    padding: 1rem;
+}
+
+/* Layout Containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Cards */
+.question-card, .response-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+/* Cabeçalhos */
+h2, h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+/* Opções e Respostas */
+.options-grid {
+    display: grid;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.option {
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Remova o estilo .correct das opções do quiz */
+.option.correct {
+    background: inherit;
+    border-color: #ddd;
+}
+
+/* Adicione estilos apenas para a revisão */
+.question-review.correct {
+    border-left: 4px solid #27ae60;
+    background: #e8f5e9;
+}
+
+.question-review.incorrect {
+    border-left: 4px solid #e74c3c;
+    background: #ffebee;
+}
+
+.correct-answer {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Histórico de Respostas */
+.response-card {
+    background: white;
+    transition: transform 0.2s;
+}
+
+.response-card:hover {
+    transform: translateY(-2px);
+}
+
+.response-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.user-answer {
+    color: var(--error);
+    font-weight: 500;
+}
+
+.correct-answer {
+    color: var(--success);
+    font-weight: 500;
+}
+
+.answer-comparison {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.answer.correct {
+    border-left: 4px solid var(--success);
+}
+
+.answer.incorrect {
+    border-left: 4px solid var(--error);
+}
+
+/* Botões */
+button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.add-question {
+    background: var(--success);
+    color: white;
+    margin: 1rem 0;
+}
+
+.delete {
+    background: var(--error);
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .response-header {
+        flex-direction: column;
+        align-items: start;
+        gap: 0.5rem;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .question-actions {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Formulário de Login */
+#login-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
