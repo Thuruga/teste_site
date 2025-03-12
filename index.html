@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Sistema de Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,11 +12,35 @@
         <input type="text" id="username" placeholder="Usuário">
         <input type="password" id="password" placeholder="Senha">
         <button onclick="login()">Entrar</button>
+        <button onclick="showRegister()">Cadastrar</button>
+    </div>
+
+    <div id="register-container" style="display:none;">
+        <h2>Cadastro</h2>
+        <input type="text" id="new-username" placeholder="Usuário">
+        <input type="password" id="new-password" placeholder="Senha">
+        <select id="new-area">
+            <option value="Eletronicas">Eletronicas</option>
+            <option value="Mecânicas">Mecânicas</option>
+        </select>
+        <select id="new-subarea">
+            <option value="Adult Care">Adult Care</option>
+            <option value="Wipes">Wipes</option>
+            <option value="Coform">Coform</option>
+            <option value="ABS">ABS</option>
+            <option value="PH">PH</option>
+            <option value="ENC">ENC</option>
+            <option value="BCM">BCM</option>
+        </select>
+        <button onclick="register()">Cadastrar</button>
+        <button onclick="showLogin()">Voltar</button>
     </div>
 
     <div id="quiz-container" style="display:none;">
         <h2 id="quiz-title"></h2>
         <div id="question-container"></div>
+        <button id="prev-button" onclick="prevQuestion()">Anterior</button>
+        <button id="next-button" onclick="nextQuestion()">Próxima</button>
         <button onclick="submitQuiz()">Finalizar Quiz</button>
     </div>
 
@@ -27,5 +52,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>
