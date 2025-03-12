@@ -1,26 +1,104 @@
 {
-    "Matemática": [
-        {
-            "question": "Qual é o resultado de 2 + 2?",
-            "options": ["3", "4", "5", "6"],
-            "answer": 1
-        },
-        {
-            "question": "Quanto é 5 x 5?",
-            "options": ["20", "25", "30", "35"],
-            "answer": 1
-        }
-    ],
-    "História": [
-        {
-            "question": "Em que ano terminou a Segunda Guerra Mundial?",
-            "options": ["1942", "1945", "1950", "1939"],
-            "answer": 1
-        },
-        {
-            "question": "Quem foi o primeiro presidente do Brasil?",
-            "options": ["Getúlio Vargas", "Juscelino Kubitschek", "Deodoro da Fonseca", "Dom Pedro II"],
-            "answer": 2
-        }
-    ]
+    "Eletronicas": {
+        "Adult Care": [
+            {
+                "question": "Pergunta 1 de Adult Care Eletronicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 0
+            }
+        ],
+        "Wipes": [
+            {
+                "question": "Pergunta 1 de Wipes Eletronicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 1
+            }
+        ],
+        "Coform": [
+            {
+                "question": "Pergunta 1 de Coform Eletronicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 2
+            }
+        ],
+        "ABS": [
+            {
+                "question": "Pergunta 1 de ABS Eletronicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 3
+            }
+        ],
+        "PH": [
+            {
+                "question": "Pergunta 1 de PH Eletronicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 0
+            }
+        ],
+        "ENC": [
+            {
+                "question": "Pergunta 1 de ENC Eletronicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 1
+            }
+        ],
+        "BCM": [
+            {
+                "question": "Pergunta 1 de BCM Eletronicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 2
+            }
+        ]
+    },
+    "Mecânicas": {
+        "Adult Care": [
+            {
+                "question": "Pergunta 1 de Adult Care Mecânicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 0
+            }
+        ],
+        "Wipes": [
+            {
+                "question": "Pergunta 1 de Wipes Mecânicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 1
+            }
+        ],
+        "Coform": [
+            {
+                "question": "Pergunta 1 de Coform Mecânicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 2
+            }
+        ],
+        "ABS": [
+            {
+                "question": "Pergunta 1 de ABS Mecânicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 3
+            }
+        ],
+        "PH": [
+            {
+                "question": "Pergunta 1 de PH Mecânicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 0
+            }
+        ],
+        "ENC": [
+            {
+                "question": "Pergunta 1 de ENC Mecânicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 1
+            }
+        ],
+        "BCM": [
+            {
+                "question": "Pergunta 1 de BCM Mecânicas",
+                "options": ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
+                "answer": 2
+            }
+        ]
+    }
 }
