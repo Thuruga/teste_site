@@ -64,27 +64,14 @@ function checkSession() {
 function startQuiz(area, subarea) {
     document.getElementById('login-container').style.display = 'none';
     document.getElementById('quiz-container').style.display = 'block';
-    document.getElementById('quiz-title').textContent = `Quiz de ${area} - ${subarea}`;
+    document.getElementById('quiz-title').textContent = `Quiz de ${area}`;
 
-    const questions = JSON.parse(localStorage.getItem('questions'));
-    if (questions && questions[area] && questions[area][subarea]) {
-        // Selecionar 6 perguntas da área específica do usuário
-        const specificQuestions = questions[area][subarea].sort(() => Math.random() - 0.5).slice(0, 6);
-
-        // Verificar se há perguntas gerais antes de tentar ordená-las
-        const generalQuestions = questions[area].general ? questions[area].general.sort(() => Math.random() - 0.5).slice(0, 4) : [];
-
-        // Combinar as perguntas específicas e gerais
-        selectedQuestions = [...specificQuestions, ...generalQuestions].sort(() => Math.random() - 0.5);
-
-        console.log("Perguntas selecionadas para o quiz:", selectedQuestions);
-        renderQuestion();
-    } else {
-        console.error(`Perguntas não encontradas para ${area} - ${subarea}`);
-    }
+    const questions = JSON.parse(localStorage.getItem('questions'))[area];
+    const selectedQuestions = questions.sort(() => Math.random() - 0.5).slice(0, 10);
+    renderQuestions(selectedQuestions);
 }
 
-function renderQuestion() {
+function renderQuestions(questions) {
     const container = document.getElementById('question-container');
     const q = selectedQuestions[currentQuestionIndex];
     container.innerHTML = `
@@ -367,5 +354,3 @@ window.submitQuiz = submitQuiz;
 window.editQuestion = editQuestion;
 window.addQuestion = addQuestion;
 window.deleteQuestion = deleteQuestion;
-window.nextQuestion = nextQuestion;
-window.prevQuestion = prevQuestion;
