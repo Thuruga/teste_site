@@ -3,14 +3,16 @@
         "password": "admin123",
         "role": "admin"
     },
-    "joao": {
-        "password": "joao123",
+    "teste1": {
+        "password": "teste123",
         "role": "user",
-        "area": "Matemática"
+        "area": "Eletronicas",
+        "subarea": "Adult Care"
     },
-    "maria": {
-        "password": "maria123",
+    "teste2": {
+        "password": "teste456",
         "role": "user",
-        "area": "História"
+        "area": "Mecânicas",
+        "subarea": "PH"
     }
 }
